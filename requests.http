@@ -1,0 +1,25 @@
+### Create a new User
+POST  http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "andrea@email.com",
+  "password": "passwordtest"
+}
+
+### Find a particular user with a given Id
+GET http://localhost:3000/auth/2
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=andrea@email.com
+
+### Delete user with a given Id
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+  "email": "changeagaindemail@email.com"
+}
