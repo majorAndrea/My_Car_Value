@@ -6,7 +6,7 @@ import { User } from '../../users/user.entity';
  * @return Custom param decorator to get the current user.
  */
 export const GetUser = createParamDecorator(
-  (_, context: ExecutionContext): User => {
+  (_data: never, context: ExecutionContext): User => {
     const req = context.switchToHttp().getRequest();
     return req.user;
   },
