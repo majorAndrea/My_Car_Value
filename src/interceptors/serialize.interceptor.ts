@@ -27,7 +27,7 @@ class SerializeInterceptor implements NestInterceptor {
 }
 
 /**
- * @decorator
+ * @decorator Serialize
  * @param dto Target dto to serialize.
  * @return Custom decorator interceptor that serializes the target dto.
  */
